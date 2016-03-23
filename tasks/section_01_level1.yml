@@ -12,7 +12,7 @@
     src={{ item.device }}
     state=mounted
     fstype={{ item.fstype }}
-    opts="nodev,nosuid,noexec"
+    opts="nodev,nosuid"
   when: item.mount == "/tmp"
   with_items: ansible_mounts
   tags:
